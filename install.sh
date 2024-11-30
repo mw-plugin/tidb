@@ -48,7 +48,6 @@ echo "use system: ${sysName}"
 
 # adduser tt | passwd tt
 
-install_tmp=${rootPath}/tmp/mw_install.pl
 VERSION=$2
 TIDB_ARCH=arm64
 if [ "$sysArch" == "x86_64" ];then
@@ -61,7 +60,7 @@ fi
 
 Install_App()
 {
-	echo '正在安装脚本文件...' > $install_tmp
+	echo '正在安装脚本文件...'
 	mkdir -p $serverPath/source
 	mkdir -p $serverPath/source/tidb
 
